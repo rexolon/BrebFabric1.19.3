@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "breb",
+	"version": "${version}",
+	"name": "Breb",
+	"description": "This Mod adds new (sometimes realistic) ways to make Bread!",
+	"authors": [
+		"sinisterexi!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/breb/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "rexi.breb.Breb"
+		],
+		"client": [
+			"rexi.breb.BrebClient"
+		],
+		"fabric-datagen": [
+			"rexi.breb.BrebDataGenerator"
+		]
+	},
+	"mixins": [
+		"breb.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.12",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
